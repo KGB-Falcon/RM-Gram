@@ -22,11 +22,11 @@ export const Publications =()=>{
        <div>
            {
                loading ? 
-               <div className="mt-40">
+               <div className="mt-60">
                    <Loading />
                </div>
                :
-                <div className='flex justify-center mb-10 items-center flex-col'>
+                <div className='flex justify-center flex-col items-center'>
                     {info?.map((publication)=>(
                         <div key={publication?.id}>
                             <Publication image={publication?.image} userName={publication?.name}/>

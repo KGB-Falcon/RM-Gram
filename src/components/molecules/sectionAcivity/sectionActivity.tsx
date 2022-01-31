@@ -1,32 +1,8 @@
 import { BsHeart } from "react-icons/bs";
 import { Suggestions } from "../../atoms/suggestions";
-import { gql, useQuery } from '@apollo/client'
 
-
-const SUGGESTIONS_QUERY=gql`
-    query GET_INFO_PUBLICATION($filter:FilterCharacter){
-        characters(filter:$filter){
-            results{
-                id
-                image
-                species
-                name
-            }
-        }
-    }
-`
 
 export const SectionActivity =()=>{
-    const {data, loading, error} = useQuery(SUGGESTIONS_QUERY, {
-        variables: {
-            "filter": {
-                "species": "alien"
-            }
-        }
-    })
-
-    const infoSuggestions = data?.characters?.results
-
     return(
         <div>
             <div className="flex justify-center flex-col items-center">
@@ -48,17 +24,7 @@ export const SectionActivity =()=>{
                 </h4>
             </div>
 
-            <div className="">
-                {
-                    infoSuggestions?.map((item)=>(
-                        <div  key={item?.id}>
-                            <Suggestions image={item?.image} userName={item?.name} species={item?.species}/>
-                        </div>))
-                }
-            </div>
-            <div className="text-center mb-16 mt-1">
-                <button className="text-sky-500 font-medium text-sm">Ver todas las sugerencias</button>
-            </div>
+           <Suggestions />
         </div>
     )
 }

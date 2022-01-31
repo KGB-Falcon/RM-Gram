@@ -32,13 +32,11 @@ export const ListOfHistories =()=>{
         <div>
             {
                 loading ? 
-                <div className='mt-14'>
-                    <Loading /> 
-                </div>
+                null
                 :
                 <div className='flex justify-center'>
                     <div className='w-full sm:w-156 sm:mt-4 sm:mb-4'>
-                        <ul className='flex mt-12 overflow-scroll w-full px-2 py-1 border border-zinc-300  bg-white'>
+                        <ul className='flex justify-start mt-12 overflow-auto w-full px-2 py-1 border border-zinc-300  bg-white'>
                             {
                                 info?.map(history=>
                                 <li key={history?.id} className='p-2'>
