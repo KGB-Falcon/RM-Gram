@@ -13,9 +13,8 @@ const Home =()=>{
                 <div className='lg:mr-7 '>
                     <ListOfHistories />
                     <Publications/>
-                    <Loading />
                 </div>
-                <div className='hidden lg:block w-80 fixed right-16 lg:right-40'>
+                <div className='hidden xl:block w-80 fixed right-16 xl:right-40'>
                     <div className='flex justify-center flex-col mt-6 items-center'>
                         <PerfilEditButton />
                     </div>
