@@ -21,7 +21,7 @@ export const Publications =()=>{
     return( 
        <div>
            {
-               true ? 
+               loading ? 
                <div className="mt-80 pl-80">
                    <Loading />
                </div>

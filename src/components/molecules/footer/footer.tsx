@@ -2,7 +2,7 @@ import { AiOutlineSmile } from "react-icons/ai";
 
 export const Footer =()=>{
     return(
-        <div className="w-full px-10 bg-white h-28 mt-102 hidden sm:block ">
+        <div className="xl:hidden w-full px-10 bg-white h-28 mt-102 hidden sm:block ">
             <div className='flex flex-wrap justify-evenly'>
                 <p className="text-xs text-slate-500 py-1 px-2">Meta</p>
                 <p className="text-xs text-slate-500 py-1 px-2">Informacion</p>

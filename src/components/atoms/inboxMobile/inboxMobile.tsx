@@ -3,7 +3,7 @@ import { MdOutlineArrowBackIos, MdOutlineEditNote } from "react-icons/md";
 
 export const InboxMobile =()=>{
     return(
-        <div className="lg:hidden">
+        <div className="xl:hidden">
             <div className="flex justify-between px-4 py-2 border border-slate-300 bg-white">
                 <div>
                     <Link href='/'>
