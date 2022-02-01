@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import { BsGearWide } from 'react-icons/bs'
 import zinogre from '../../../resources/Zinogre.jpg'
 
 export const PerfilEditButton =()=>{
     return(
-        <div className="mt-14 flex justify-center mb-4">
+        <div className="mt-14 flex justify-center mb-4 ">
                 <div className="w-28">
                     <Image src={zinogre} width={77} height={77} className="rounded-full"/>
                 </div>
