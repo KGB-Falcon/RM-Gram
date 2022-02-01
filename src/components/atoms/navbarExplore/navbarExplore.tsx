@@ -14,13 +14,13 @@ export const NavbarExplore =()=>{
                {
                 state === false ? 
                     <div className="flex items-center border justify-center rounded-lg py-1" onClick={handleClick}> 
-                        <div className="pr-1 pt-0.5"><CgSearch size={14} color="gray"/></div>
+                        <div className="pr-1 pt-0.5"><CgSearch size={14} color="#3f3f3f" /></div>
                         <p className="text-sm text-slate-500">Buscar</p>
                     </div>
                     :
                     <div className="flex">
                         <div className="flex items-center border pl-3 rounded-lg py-1 mr-5">
-                            <div className="pr-1 pt-0.5"><CgSearch size={14} color="gray"/></div>
+                            <div className="pr-1 pt-0.5"><CgSearch size={14} color="#3f3f3f"/></div>
                             <input className="text-sm outline-none w-48" type="text" placeholder="Buscar"/>
                         </div>
                         <button onClick={handleClick} className="text-sm font-medium">Cancel</button>

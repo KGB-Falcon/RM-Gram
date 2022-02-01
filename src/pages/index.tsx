@@ -1,3 +1,4 @@
+import { Loading } from '../components/atoms/loading'
 import { NavbarHome } from '../components/atoms/navbarHome'
 import { PerfilEditButton } from '../components/atoms/perfilEditButton'
 import { Suggestions } from '../components/atoms/suggestions'
@@ -12,8 +13,9 @@ const Home =()=>{
                 <div className='lg:mr-7 '>
                     <ListOfHistories />
                     <Publications/>
+                    <Loading />
                 </div>
-                <div className='hidden lg:block w-80 fixed right-16'>
+                <div className='hidden lg:block w-80 fixed right-16 lg:right-40'>
                     <div className='flex justify-center flex-col mt-6 items-center'>
                         <PerfilEditButton />
                     </div>

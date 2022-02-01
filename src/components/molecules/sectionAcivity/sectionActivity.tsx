@@ -18,10 +18,12 @@ export const SectionActivity =()=>{
                     <button className="mt-3 font-bold text-cyan-400">Comparte tu primera foto</button>
                 </div>
             </div>
-            <div className="pl-4 pt-4 mb-4">
-                <h4 className="font-medium">
-                    Sugerencias para ti
-                </h4>
+            <div className="w-full sm:flex sm:justify-center">
+                <div className="pl-4 pt-4 mb-4 sm:w-160 md:w-160">
+                    <h4 className="font-medium">
+                        Sugerencias para ti
+                    </h4>
+                </div>
             </div>
 
            <Suggestions />

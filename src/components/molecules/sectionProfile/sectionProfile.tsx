@@ -55,10 +55,10 @@ export const SectionProfile =()=>{
                 </div>
             </div>
             <div className="flex justify-between px-8 py-3 border border-t-transparent border-b-slate-300">
-                <div><AiOutlineAppstore size={25}/></div>
-                <div><IoSquareOutline size={25}/></div>
-                <div><BsBookmark size={25} /></div>
-                <div><BsPersonSquare size={25} /></div>
+                <div><AiOutlineAppstore size={25} color="#3f3f3f"/></div>
+                <div><IoSquareOutline size={25} color="#3f3f3f"/></div>
+                <div><BsBookmark size={25} color="#3f3f3f" /></div>
+                <div><BsPersonSquare size={25} color="#3f3f3f" /></div>
             </div>
             <div>
                 {

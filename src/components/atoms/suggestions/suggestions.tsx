@@ -35,9 +35,12 @@ export const Suggestions =()=>{
                 </div>
                 :
                 infoSuggestions?.map((item)=>(
-                    <div  key={item?.id}>
-                        <Suggestion image={item?.image} userName={item?.name} species={item?.species}/>
-                    </div>))
+                    <div key={item?.id} className='flex justify-center'>
+                        <div className='w-160'>
+                            <Suggestion image={item?.image} userName={item?.name} species={item?.species}/>
+                        </div>
+                    </div>
+                ))
             }
             {
                 loading ? 

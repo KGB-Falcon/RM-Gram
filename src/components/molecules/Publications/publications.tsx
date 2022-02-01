@@ -22,7 +22,7 @@ export const Publications =()=>{
        <div>
            {
                loading ? 
-               <div className="mt-60">
+               <div className="mt-80 pl-80">
                    <Loading />
                </div>
                :
